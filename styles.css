@@ -1,0 +1,253 @@
+/*CSS using flexbox and grid (grid is used in theater-info)*/
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: black;
+}
+
+.flexnav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar-theater {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 2%;
+    padding-right: 20%;
+}
+
+.navbar-theater a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-list {
+    flex-direction: row;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+    margin-top: 2%;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-around;
+    margin: 0px;
+}
+
+ul a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(28, 215, 240)
+}
+
+.main-tile {
+    position: relative;
+}
+
+.background {
+    width: 100%; 
+    height: 900px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1; 
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+}
+
+.showfeats {
+    z-index: 1;
+    height: 19em;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    display: flex;
+    font-size: 3em;
+    text-shadow: -1px 1px 2px rgb(0, 0, 0),
+                  1px 1px 0 #000,
+                  1px -1px 0 #000,
+                  -1px -1px 0 #000;   
+}
+
+button {
+    padding: 3px;
+    border-radius: 2px;
+    border: 1px solid;
+    background-color: white;
+    
+}
+
+.dropdown-flex button {
+    background-color: white;
+    color: solid black;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+ 
+.dropdown a {
+    display: block;
+    position: absolute;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: white;
+    min-width: 160px;
+    z-index: 3;
+}
+
+.dropdown .content {
+    position: absolute;
+    min-width: 100%;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: none;
+}
+ 
+.dropdown:hover .content {
+    display: flex;
+}
+
+.dropdown:hover button {
+    background-color: rgba(255, 165, 0, 0.6);
+}
+
+.dropdown .content a:hover {
+    background-color: rgba(255, 165, 0, 0.2);
+}
+
+.shows {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 250px;
+    padding-bottom: 50px;
+}
+
+.theater-info {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 200px 500px);
+    grid-column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.mapimg {
+    width: 200px;
+}
+
+.show-info {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 70px;
+    padding-left: 200px;
+}
+
+.feature-title {
+    padding-bottom: 15px;
+}
+
+.show-info .show-dates{ 
+    padding-bottom: 15px;
+}
+.show-info .theater-location { 
+    padding-bottom: 15px;
+}
+
+.read-more-button {
+    padding-bottom: 170px;
+}
+
+.read-more-button button {
+    background-color: rgba(255, 165, 0, 0.6);
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 2px;    
+}
+
+footer {
+    background-color: #000;
+    color: #dddddd;
+    margin-bottom: 0px;
+}
+
+.theater-info-footer {
+    background-color: black;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    justify-content: space-evenly;
+    
+}
+
+.mapimg {
+    width: 250px;
+}
+
+.map {
+    width: 250px;
+    padding: 2%;
+    padding-left: 100px;
+}
+
+.footinfo, .footshows, .social {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    font: 0.6em;
+    justify-content: space-evenly;
+}
+
+.foothead {
+    font-size: 2em;
+}
+
+.tiny {
+    margin: 3px;
+    text-decoration: none;
+    color: white;
+}
+
+.tiny:hover {
+    text-decoration: none;
+    color: rgb(28, 215, 240)
+}
